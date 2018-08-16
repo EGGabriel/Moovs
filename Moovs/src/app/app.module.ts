@@ -16,6 +16,8 @@ import { AppRouteModule } from './/app-route.module';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { UserComponent } from './header/user/user.component';
+import { NavbarComponent } from './header/navbar/navbar.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { FooterComponent } from './footer/footer.component';
     FilmesComponent,
     LoginComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    UserComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
