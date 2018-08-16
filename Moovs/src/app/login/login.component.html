@@ -1,0 +1,18 @@
+<div class="text-center">
+    <h2 class="jumbotron">Login ADM-Moovs</h2>
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <input class="form-control" name="username" placeholder="User Name">
+      </div>
+      <div class="form-group">
+          <input class="form-control" name="password" type="password" placeholder="Password">
+      </div>
+      <button class="btn btn-default" type="submit" [disabled]="!loginForm.valid">
+          <i class="fa fa-floppy-o"></i> Enviar</button>
+    </div>
+    </div>
+    </form>
+</div>
